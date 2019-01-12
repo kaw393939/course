@@ -1,0 +1,45 @@
+{
+    "name": "kaw393939/course",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Keith Williams",
+            "email": "keith@webizly.com",
+            "homepage": "http://github.com/kaw393939"
+        }
+    ],
+    "homepage": "https://github.com/kaw393939/course",
+    "keywords": ["Laravel", "course"],
+    "require": {
+        "illuminate/support": "~5",
+        "cviebrock/eloquent-sluggable": "^4.3",
+        "santigarcor/laratrust": "5.0.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kaw393939\\course\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "kaw393939\\course\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kaw393939\\course\\courseServiceProvider"
+            ],
+            "aliases": {
+                "course": "kaw393939\\course\\Facades\\course"
+            }
+        }
+    }
+}

@@ -1,2 +1,4 @@
+# ignore vendor
 vendor
+# ignore jet brains
 .idea

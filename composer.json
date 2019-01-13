@@ -20,7 +20,8 @@
         "phpunit/phpunit": "~7.0",
         "mockery/mockery": "^1.1",
         "orchestra/testbench": "~3.0",
-        "sempro/phpunit-pretty-print": "^1.0"
+        "sempro/phpunit-pretty-print": "^1.0",
+        "barryvdh/laravel-ide-helper": "^2.5"
     },
     "autoload": {
         "psr-4": {
@@ -41,5 +42,12 @@
                 "course": "kaw393939\\course\\Facades\\course"
             }
         }
+    },
+    "scripts":{
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta"
+        ]
     }
 }

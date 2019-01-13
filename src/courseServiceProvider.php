@@ -19,7 +19,7 @@ class courseServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'kaw393939');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'kaw393939');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-           $this->loadRoutesFrom(__DIR__.'/routes.php');
+           $this->loadRoutesFrom(__DIR__.'/Routes/routes.php');
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
